@@ -3,6 +3,7 @@
 
 # But source files
 !*.c
+!*.h
 !.gitignore
 !README.md
 
