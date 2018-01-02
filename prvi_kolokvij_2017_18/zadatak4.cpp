@@ -21,7 +21,8 @@
  	a) napišite default konstruktor kojim se kut postavlja na nulu
  	b) napišite funkcije SetKut i GetKut koje postavljaju, odnosno vraćaju kut u
  	   stupnjevima
- 	c) napišite kopirni konstruktor za klasu Kut
+ 	c1) napišite kopirni konstruktor za klasu Kut
+    c2) napišite operator = za klasu kut
  	d) napišite primjer main funkcije u kojoj ćete iskoristiti klasu Kut i sve napisane
  	   funkcije
  
@@ -72,9 +73,15 @@ double Kut::GetKut() {
     return deg;
 }
 
-// c) kopirni konstruktor za klasu Kut
+// c1) kopirni konstruktor za klasu Kut
 Kut::Kut(const Kut& x) {
     deg = x.deg;
+}
+
+// c2) napišite operator = za klasu kut
+Kut& Kut::operator=(const Kut& c) {
+    deg = x.deg;
+    return *this
 }
 
 // d) primjer main funkcije u kojoj ćete iskoristiti klasu Kut i sve napisane funkcije
@@ -85,6 +92,10 @@ int main () {
     cout << "Primjer korištenja GetKut metode: " << a.GetKut() << endl;
     
     Kut b = a; // pozivanje kopirnog konstruktora
+
+    Kut c;
+    c = a; // pozivanje operatora =
+    cout << "Primjer korištenja GetKut metode: " << c.GetKut() << endl;
     
     return 0;
 }
