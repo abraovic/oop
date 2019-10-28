@@ -4,6 +4,8 @@
 
 Dostupne vježbe:
 
+Vježba 2
+
 Vježba 6
 
 Vježba 7
