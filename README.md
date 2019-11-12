@@ -8,6 +8,8 @@ Vježba 2
 
 Vježba 3
 
+Vježba 4
+
 Vježba 6
 
 Vježba 7
